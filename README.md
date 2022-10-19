@@ -1,2 +1,2 @@
-# goit-markup-hw-04
-про типи зображень
+# goit-markup-hw-02
+home task2_lessons 1-4
