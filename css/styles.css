@@ -9,6 +9,7 @@
     --accent-color:#2196F3;
     --contrast-color: #FFFFFF;
     --icon-color: #afb1b8;
+    --icon-box-color: #F5F4FA;
 }
 body {
     background-color: var(--contrast-color);
@@ -112,17 +113,21 @@ ul{
     text-decoration: none;
 }
 
-    .icon{
+    .link-contact .icon{
     margin-right: 10px;
     fill: currentColor;
 }
 
+/* a svg :hover #mail,
+a svg :focus #mail{
+    fill: var(--accent-color);
+} */
+.cont .link-contact:focus,
+.cont .link-contact:hover,
 .site_nav .link:hover,
 .site_nav .link:focus,
 .link-contact:hover,
-.link-contact:focus
-.icon-mail:hover,
-.icon-mail:focus {
+.link-contact:focus{
     color: var(--accent-color);
 }
 
@@ -266,6 +271,7 @@ ul{
     width: 270px;
     height: 120px;
     /* border: 1px solid tomato; */
+    background-color: var(--icon-box-color);
 }
 /* image */
 .images{
@@ -297,7 +303,7 @@ ul{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    background-color: #F5F4FA;
+    background-color: var(--icon-box-color);
     color: var(--title);
 }
 
@@ -348,6 +354,9 @@ ul{
 .link +.link{
     margin-left: 10px;
 }
+
+/*Constant clients*/
+
 
 /* footer */
 .footer{
