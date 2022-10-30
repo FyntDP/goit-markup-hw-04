@@ -151,40 +151,6 @@ a svg :focus #mail{
     width: calc((100% - 3 * 30px) / 4);
 }
 
-/* .features::before{
-    display: block;
-    content: "";
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: #F5F4FA;
-    border: 1px solid tomato;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-}
-
-.features:nth-child(1)::before{
-    background-image: url(/images/antenna\ 1.svg);
-}
-
-.features:nth-child(2)::before {
-    background-image: url(/images/clock\ 1.svg);
-}
-
-.features:nth-child(3)::before {
-    background-image: url(/images/diagram\ 1.svg);
-}
-
-.features:nth-child(4)::before {
-    background-image: url(/images/astronaut\ 1.svg);
-} */
-
-
-
-
-
 .section_title_class {
     margin-bottom: 50px;
     font-style: normal;
@@ -208,7 +174,7 @@ a svg :focus #mail{
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.8),
         rgba(47, 48, 58, 0.8)),
-        url(/images/hero\ \(1\).jpg);
+        url(../images/hero\ \(1\).jpg);
                 
     
     background-repeat: no-repeat;
@@ -337,8 +303,9 @@ a svg :focus #mail{
 .social-link{
     display: flex;
     justify-content: center;
-    width:  44px ;
-    height: 44px ;
+    width:  44px;
+    height: 44px;
+    cursor: pointer;
     /* border: 1px solid tomato; */
 }
 .link{
@@ -355,6 +322,16 @@ a svg :focus #mail{
     margin-left: 10px;
 }
 
+.social-link:hover,
+.social-link:focus{
+    background-color: var(--accent-color) ;
+    border-radius: 50%;
+}
+
+.social-link:hover .link,
+.social-link:focus .link {
+    color: var(--contrast-color);
+}
 /*Constant clients*/
 
 
